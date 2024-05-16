@@ -23,6 +23,7 @@ namespace MonsterKampfSim.Monster
             if(Stunned)
             {
                 Stunned = true;
+                return;
             }
 
             // Special Attack -> Check if enemy health below own health

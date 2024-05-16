@@ -27,6 +27,7 @@ namespace MonsterKampfSim.Monster
             if(Stunned)
             {
                 Stunned = true;
+                return;
             }
 
             // Special Attack -> Check if special attack should be performed
