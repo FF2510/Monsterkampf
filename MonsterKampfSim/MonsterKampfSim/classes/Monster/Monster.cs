@@ -1,4 +1,4 @@
-namespace MonsterKampfSim.Monster
+namespace MonsterKampfSim.monster
 {
     /// <summary>
     /// Abstract class that defines the basic features of each monster.
@@ -135,6 +135,16 @@ namespace MonsterKampfSim.Monster
 
             // Return true if the chance threshold is met
             return chance > result;
+        }
+
+
+        /// <summary>
+        /// Returns if the monster is still alive.
+        /// </summary>
+        /// <returns>Is alive? Boolean value</returns>
+        public bool IsAlive()
+        {
+            return HealthPoints > 0;
         }
     }
 }

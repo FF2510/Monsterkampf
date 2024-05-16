@@ -1,4 +1,4 @@
-namespace MonsterKampfSim.Monster
+namespace MonsterKampfSim.monster
 {
     public class Goblin : Monster
     {

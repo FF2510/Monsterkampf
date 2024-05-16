@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace MonsterKampfSim.Monster
+namespace MonsterKampfSim.monster
 {
     public class Troll : Monster
     {
