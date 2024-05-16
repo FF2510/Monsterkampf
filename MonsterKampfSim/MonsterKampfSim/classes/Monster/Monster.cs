@@ -1,5 +1,10 @@
 namespace MonsterKampfSim.Monster
 {
+    /// <summary>
+    /// Abstract class that defines the basic features of each monster.
+    /// This class is abstract, preventing anyone from creating instances from it.
+    /// Includes basic functionality for each monster such as attacking, taking damage, and resetting attributes.
+    /// </summary>
     public abstract class Monster
     {
         /// <summary>
