@@ -45,6 +45,9 @@ namespace MonsterKampfSim.Monster
         // Default Value -> Default Defense of the monster
         private readonly int _defaultDefense;
 
+        // Private Member -> Random Class Instance
+        private static readonly Random rnd = new Random();
+
 
 
 
@@ -115,6 +118,22 @@ namespace MonsterKampfSim.Monster
         private void ResetDefense()
         {
             DefensePoints = _defaultDefense;
+        }
+
+        /// <summary>
+        /// Determines if the monster's special attack should be performed.
+        /// Given the chance of the attack, this function will randomly return
+        /// a boolean indicating if the attack should be performed.
+        /// </summary>
+        /// <param name="chance">The probability (0-100) that the special attack should be performed.</param>
+        /// <returns>A boolean indicating whether the special attack should be performed.</returns>
+        private bool Randomizer(int chance)
+        {
+            // Get a number between 0 and 99
+            int result = rnd.Next(0, 100);
+
+            // Return true if the chance threshold is met
+            return chance > result;
         }
     }
 }
