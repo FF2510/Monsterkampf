@@ -31,6 +31,12 @@ namespace MonsterKampfSim.Monster
         /// </summary>
         public int Speed { get; private set; }
 
+        /// <summary>
+        /// Defines if this monster is stunned.
+        /// Stunned monsters cannot attack.
+        /// </summary>
+        public bool Stunned {get; set;}
+
 
 
         // Default Value -> Default Health of the monster
