@@ -8,22 +8,25 @@ namespace MonsterKampfSim.monster
         
 
         // Ork constructor, call constructor from base class
-        public Ork(int health, int attack, int defense, int speed) : base(health, attack, defense, speed){ }
+        public Ork(int health, int attack, int defense, int speed) : base(health, attack, defense, speed)
+        {
+            Name = "Ork";
+        }
 
         // Attack Logic -> Override function to attack target
-        public override void AttackTarget(Monster target)
+        public override (bool, bool, int) AttackTarget(Monster target)
         {
             // End function -> Make sure target is valid
             if(target is null)
             {
-                return;
+                return (false, false, 0);
             }
 
             // End function -> Stop attack if monster is stunned but reset stunned state
             if(Stunned)
             {
-                Stunned = true;
-                return;
+                Stunned = false;
+                return (false, false, 0);
             }
 
             // Special Attack -> Check if own health below target health
@@ -33,12 +36,13 @@ namespace MonsterKampfSim.monster
                 if(Randomizer(20))
                 {
                     target.TakeDamage(this, (AttackPoints * 2));
-                    return;
+                    return (true, true, AttackPoints * 2);
                 }
             }
 
             // Normal Attack -> Apply damage to target
             target.TakeDamage(this, AttackPoints);
+            return (true, false, AttackPoints);
         }
 
     }

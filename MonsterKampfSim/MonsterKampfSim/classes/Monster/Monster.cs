@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace MonsterKampfSim.monster
 {
     /// <summary>
@@ -36,6 +38,11 @@ namespace MonsterKampfSim.monster
         /// Stunned monsters cannot attack.
         /// </summary>
         public bool Stunned {get; set;}
+
+        /// <summary>
+        /// Defines the gameplay name of the monster
+        /// </summary>
+        public string Name { get; protected set; } = "Monster";
 
 
 
@@ -77,7 +84,7 @@ namespace MonsterKampfSim.monster
         /// Needs to be implemented by all children.
         /// </summary>
         /// <param name="target">The monster you want to attack. (Cannot be self).</param>
-        public abstract void AttackTarget(Monster target);
+        public abstract (bool, bool, int) AttackTarget(Monster target);
 
 
         /// <summary>

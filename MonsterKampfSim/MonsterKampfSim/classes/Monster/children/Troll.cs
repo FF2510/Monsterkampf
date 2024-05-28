@@ -11,23 +11,28 @@ namespace MonsterKampfSim.monster
 
 
         // Troll constructor, call constructor from base class
-        public Troll(int health, int attack, int defense, int speed) : base(health, attack, defense, speed){ }
+        public Troll(int health, int attack, int defense, int speed) : base(health, attack, defense, speed)
+        {
+            Name = "Troll";
+        }
 
 
         // Attack Logic -> Override function to attack target
-        public override void AttackTarget(Monster target)
+        public override (bool, bool, int) AttackTarget(Monster target)
         {
+            bool specAttack = false;
+
             // End function -> Make sure target is valid
             if(target is null)
             {
-                return;
+                return (false, false, 0);
             }
 
             // End function -> Stop attack if monster is stunned but reset stunned state
             if(Stunned)
             {
-                Stunned = true;
-                return;
+                Stunned = false;
+                return (false, false, 0);
             }
 
             // Special Attack -> Check if special attack should be performed
@@ -38,11 +43,15 @@ namespace MonsterKampfSim.monster
                 {
                     // Set target to be stunned
                     target.Stunned = true;
+                    specAttack = true;
+
                 }
             }
 
             // Normal Attack -> Apply damage to target
             target.TakeDamage(this, AttackPoints);
+
+            return (true, specAttack, AttackPoints);
         }
     }
 }

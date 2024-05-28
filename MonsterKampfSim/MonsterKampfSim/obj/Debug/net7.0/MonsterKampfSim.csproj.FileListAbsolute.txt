@@ -1,0 +1,14 @@
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\bin\Debug\net7.0\MonsterKampfSim.exe
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\bin\Debug\net7.0\MonsterKampfSim.deps.json
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\bin\Debug\net7.0\MonsterKampfSim.runtimeconfig.json
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\bin\Debug\net7.0\MonsterKampfSim.dll
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\bin\Debug\net7.0\MonsterKampfSim.pdb
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.GeneratedMSBuildEditorConfig.editorconfig
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.AssemblyInfoInputs.cache
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.AssemblyInfo.cs
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.csproj.CoreCompileInputs.cache
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.dll
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\refint\MonsterKampfSim.dll
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.pdb
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\MonsterKampfSim.genruntimeconfig.cache
+h:\SAE\Monsterkampf\MonsterKampfSim\MonsterKampfSim\obj\Debug\net7.0\ref\MonsterKampfSim.dll
